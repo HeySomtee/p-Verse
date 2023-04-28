@@ -43,9 +43,9 @@ function updateName(params) {
     ////////////////////////////////
 
     if (second.value == "") {
-        alert("fill the required field")
+        alert("Not too fast, fill the required field")
     } else if (second2.value == "") {
-        alert("fill the required field")
+        alert("Not too fast, fill the required field")
     }
 
     if (second.value != "" && second2.value ) {
@@ -269,6 +269,20 @@ document.getElementById("light-modes").addEventListener("click", ()=>{
     
     console.log(val);
 })
+
+
+function preview_image(event){
+
+    document.getElementById('profilePicture').style.display='block';
+    var reader = new FileReader();
+    reader.onload = function(){
+        var output = document.getElementById('profilePicture');
+        output.src = reader.result;
+    }
+    //
+    document.getElementById('file_photo').style.display='none';
+    reader.readAsDataURL(event.target.files[0]);
+};
 
 // modes.dark.addEventListener('click', () => {
 //     alert(' ')

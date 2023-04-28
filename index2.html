@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="prompt" >
+        please switch to mobile
+    </div>
+    
     <div id="over" class="over">
 
         <div class="root" id="root">
@@ -102,8 +106,9 @@
                 </div>
 
                 <div class="profile">
-                    <input type="file" id="file_photo" onchange="preview_image(event)" name="item_image"  >profile picture</input>
                     <img id="profilePicture" src="/arPfp.png" alt=""> <br>
+                    <input type="file" id="file_photo" onchange="preview_image(event)" name="item_image"  ></input>
+                    <br>
                     <a style="color: #fff;" id="twitterLink" href="#">
                         <span id="placeTwitId"></span>
                     </a>

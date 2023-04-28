@@ -171,6 +171,12 @@ body{
     float:right;
 }
 
+#file_photo{
+    margin-left: -30vw;
+    /* float: right; */
+    position: absolute;
+}
+
 #profilePicture{
     width: 20vw;
     height: 20vw;
@@ -751,13 +757,24 @@ iframe{
     position: absolute;
 }
 
+.prompt{
+    display: none;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 
 
 
 @media screen and (min-width: 800px) {
-    body{
+    .over{
         display: none;
+    }
+
+    .prompt{
+        display: block;
     }
 }

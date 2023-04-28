@@ -1235,9 +1235,21 @@ textarea{
     float: left;
 }
 
+.prompt{
+    display: none;
+    color: #fff;
+    margin: 10px;
+}
+
 
 @media screen and (max-width: 800px) {
-    body{
+    #root{
         display: none;
+    }
+
+    .prompt{
+        display: block;
+        color: #fff;
+        margin: 10px;
     }
 }
