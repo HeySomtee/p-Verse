@@ -1,0 +1,48 @@
+body{
+    margin: 0%;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    background-color: rgb(233, 229, 229);
+}
+
+
+
+.main{
+    width: 100vw;
+    /* height: 100px; */
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.main div{
+    width: 30vw;
+    height: 40vh;
+    display: grid;
+    place-content: center;
+    /* border: 1px solid black; */
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+i{
+    font-size: 100px;
+}
+
+a{
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .main{
+        display: grid;
+        background-color: rgba(0, 255, 255, 0);
+        
+    }
+
+    .main div{
+        width: 80vw;
+        margin-bottom: 2vh;
+    }
+}    
